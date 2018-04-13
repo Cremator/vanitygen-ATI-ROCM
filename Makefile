@@ -1,6 +1,6 @@
 CC=/opt/rocm/bin/hcc
 LIBS=-lpcre -lcrypto -lm -lpthread
-CFLAGS=-L/opt/rocm/opencl/lib/x86_64 -ggdb -O3 -Wno-c++11-narrowing -Wall
+CFLAGS=-L/opt/rocm/include -O3 -Wno-c++11-narrowing -Wall
 OBJS=vanitygen.o oclvanitygen.o oclvanityminer.o oclengine.o keyconv.o pattern.o util.o
 PROGS=vanitygen keyconv oclvanitygen oclvanityminer
 PLATFORM=$(shell uname -s)
