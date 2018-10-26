@@ -1401,6 +1401,10 @@ vg_prefix_context_add_patterns(vg_context_t *vcp,
 			ats = "namecoin";
 			bw = "\"M\" or \"N\"";
 			break;
+		case 76:
+			ats = "DASH";
+			bw = "\"X\"";
+			break;
 		default:
 			break;
 		}
